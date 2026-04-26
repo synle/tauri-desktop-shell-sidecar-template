@@ -10,8 +10,8 @@ This template includes an example sidecar in `sidecar-src/` (a Rust CLI), built 
 
 Sister templates (in adjacent directories):
 
-- `tauri_desktop_raw_template` — plain Tauri (no sidecar)
-- `tauri_desktop_node_sidecar_template` — Tauri + Node.js/Express sidecar
+- `tauri-desktop-raw-template` — plain Tauri (no sidecar)
+- `tauri-desktop-node-sidecar-template` — Tauri + Node.js/Express sidecar
 
 ## Build commands
 
