@@ -55,7 +55,7 @@ The single source of truth is **`src-tauri/tauri.conf.json` → `version`**. `bu
 
 ## CI / Release Workflows
 
-- **`build.yml`** — runs on every push/PR to `main`, runs `npm test` and `cargo test` then builds the Tauri bundle (which builds the sidecar via `build.rs`). Posts a PR comment with artifact download links.
+- **`build.yml`** — runs on every push/PR to `main`, runs `npm test` and `cargo test` then builds the Tauri bundle (which builds the sidecar via `build.rs`). Also runs a Rust coverage gate (`cargo-llvm-cov`) on `src-tauri` (the sidecar is `[[bin]]`-only with no tests, so it's not gated); fails the build below the floored baseline. Posts a PR comment with artifact download links.
 - **`release-official.yml`** — `v*` tag pushes or manual `workflow_dispatch`.
 - **`release-beta.yml`** — manual `workflow_dispatch` only.
 
