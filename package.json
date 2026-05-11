@@ -1,6 +1,6 @@
 {
   "name": "tauri-desktop-shell-sidecar-template",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Skeleton Tauri v2 + shell binary sidecar desktop app template (React 19 + MUI v9 + TypeScript).",
   "private": true,
   "scripts": {
