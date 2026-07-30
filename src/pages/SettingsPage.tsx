@@ -28,16 +28,13 @@ export default function SettingsPage() {
             />
             <FormControlLabel
               control={
-                <Switch
-                  checked={autoStart}
-                  onChange={(e) => setAutoStart(e.target.checked)}
-                />
+                <Switch checked={autoStart} onChange={(e) => setAutoStart(e.target.checked)} />
               }
               label="Launch at login"
             />
             <Typography variant="caption" color="text.secondary">
-              These settings are not persisted yet — wire them to a Tauri command
-              (see `lib.rs`) when you start building.
+              These settings are not persisted yet — wire them to a Tauri command (see `lib.rs`)
+              when you start building.
             </Typography>
           </Stack>
         </CardContent>

@@ -41,7 +41,10 @@ export default function HomePage() {
           Run sidecar
         </Button>
         {output && (
-          <Typography sx={{ mt: 2, fontFamily: "monospace", whiteSpace: "pre-wrap" }} variant="body2">
+          <Typography
+            sx={{ mt: 2, fontFamily: "monospace", whiteSpace: "pre-wrap" }}
+            variant="body2"
+          >
             {output}
           </Typography>
         )}
